@@ -77,7 +77,7 @@ class MainActivity : ComponentActivity() {
                         DrawerContent(
                             selectedItem = selectedDrawerItem,
                             onDestinationClicked = { route ->
-                                selectedDrawerItem = route
+//                                selectedDrawerItem = route
                                 navController.navigate(route) {
                                     popUpTo(navController.graph.startDestinationId) { saveState = true }
                                     launchSingleTop = true
